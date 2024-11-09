@@ -1,0 +1,96 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* Remove default margin */
+}
+
+/* Sidebar Styles */
+#sidebar {
+  background-color: #343a40; /* Dark background */
+  color: #fff; /* White text */
+  min-height: 100vh; /* Full height */
+  width: 15%; /* Sidebar width */
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  transform: translateX(0); /* Initially visible */
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+  z-index: 1000; /* Ensure sidebar is above other elements */
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Make it visible */
+}
+
+/* Sidebar hidden on small screens */
+@media (max-width: 768px) {
+  #sidebar {
+      position: absolute; /* Change to absolute for small screens */
+      transform: translateX(-100%); /* Move sidebar out of view */
+      opacity: 0; /* Fully transparent */
+      visibility: hidden; /* Hidden from view */
+  }
+  #sidebar.active {
+      transform: translateX(0); /* Slide in sidebar when active */
+      opacity: 1; /* Fully visible */
+      visibility: visible; /* Make it visible */
+      width: 60%; /* Sidebar width */
+  }
+}
+
+/* Sidebar list styles */
+#sidebar ul {
+  padding: 0;
+  list-style: none; /* Remove bullets */
+}
+
+#sidebar ul li a {
+  color: #adb5bd; /* Light text for links */
+  padding: 15px; /* Padding for links */
+  display: block; /* Block display for full width */
+  text-decoration: none; /* Remove underline */
+}
+
+#sidebar ul li a:hover {
+  background-color: #495057; /* Darker background on hover */
+}
+
+/* Optional: Style the hamburger button */
+#sidebarToggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1030; /* Above all other elements */
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-left: 15%; /* Leave space for the sidebar */
+  padding: 20px; /* Add some padding for content */
+  background-color: #f8f9fa; /* Light background for content */
+  min-height: 100vh; /* Full height for the content area */
+}
+
+/* Dashboard Card Styling */
+.dashboard-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for cards */
+}
+
+/* Adjust the main content area for small screens */
+@media (max-width: 768px) {
+  .main-content {
+      margin-left: 0; /* No margin on small screens */
+      padding: 10px; /* Reduced padding for smaller screens */
+  }
+}
+
+/* Header Card Styles */
+.card {
+  background-color: #f8f9fa; /* Light background for the card */
+}
+
+.card-title {
+  font-weight: bold; /* Bold title */
+}
+
+.card-text {
+  font-size: 14px; /* Adjust text size */
+}

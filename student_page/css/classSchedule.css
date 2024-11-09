@@ -1,0 +1,48 @@
+
+
+.infoblock0{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-bottom: none;
+    border-left: none;
+    border-top-right-radius: 15px;
+}
+.infoblock1{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-right: none;
+    border-bottom-left-radius: 15px;
+}
+.infoblock2{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-bottom-right-radius: 15px;
+}
+.logo{
+    background-color: rgb(255, 255, 255);
+    background-image: url("../resources/logo.png");
+    background-size: 80% ;
+    background-repeat:no-repeat;
+    background-position: center;
+    border: 1px solid black;
+    border-bottom: none;
+    border-right: none;
+    border-top-left-radius: 15px;
+
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .chakra-petch-medium {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .modal-dialog-custom {
+    max-width: 50%;
+}

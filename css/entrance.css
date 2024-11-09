@@ -1,0 +1,46 @@
+.logo{
+    background-image: url("../resources/logo.png");
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.registeration-Login-box{
+    margin-top: 100px;
+    border: solid 3px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+}
+
+.errorbox{
+    border: solid 3px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+
+}
+
+.Admins-Login-button{
+    background-color: rgb(88, 131, 141);
+    color: aliceblue;
+}
+
+.Admins-Login-button:hover{
+    background-color: rgb(110, 164, 176);
+    color: aliceblue;
+}
+
+.plus__icon i{
+    position: absolute;
+    top: 45%; 
+    left: 15%; 
+    font-size: 80px;
+    transform: translate(-50%, -50%); 
+    color: rgb(0, 0, 0); 
+    opacity: 0.8; 
+    cursor: pointer;
+}
+
+.profile__img{
+    position: relative;
+    display: inline-block;
+    max-width: 100%; 
+}

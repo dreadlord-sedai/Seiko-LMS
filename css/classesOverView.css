@@ -1,0 +1,43 @@
+.header{
+    background-color: rgb(225, 225, 225);
+}
+
+.logo{
+ background-image: url("../resources/logo.png");
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 50px;
+ width: 50px;
+ margin-right: 10px;
+ margin-left: 10px;
+}
+
+.Title001{
+    height: 50px;
+}
+
+
+.sticky-nav {
+    top: 0;
+    z-index: 1020;
+  }
+
+.footer001{
+    background-color: rgb(38, 40, 43);
+    color: gold;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    background-color: rgb(53, 53, 57);
+}

@@ -1,0 +1,140 @@
+
+/** Student Dashboard Css **/
+.student-dashboard-body {
+    background-image: url(../resources/dashboard-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px; 
+}
+
+.side-navbar {
+    height: 100vh;
+    position: fixed;
+    width: 250px;
+    background-color: #343a40;
+    overflow-y: auto;
+}
+
+.side-navbar .nav-link {
+    color: #fff;
+    padding: 15px; /* Keep consistent padding */
+    border-bottom: 1px solid #454d55;
+    text-align: left; /* Align text to the left */
+}
+
+.side-navbar .nav-link:hover {
+    background-color: #495057;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Dashboard and Timetable Backgrounds */
+.dashboard {
+    background-color: #f53838;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.timetable {
+    background-color: #c25929;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.card {
+    margin: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 100px;
+    margin: 4px;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    font-weight: 300;
+}
+
+/* Responsive Text */
+.text-wrap {
+    overflow-wrap: break-word; /* Ensure text wraps correctly */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0; /* Remove left margin on small screens */
+    }
+    
+    .side-navbar {
+        height: auto; /* Allow sidebar to be auto height */
+    }
+
+    .nav-link {
+        text-align: center; /* Center text on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for small screens */
+    }
+
+    .card-title {
+        font-size: 1rem; /* Smaller font size for card titles */
+    }
+
+    .card-text {
+        font-size: 0.875rem; /* Smaller font size for card text */
+    }
+
+    .profile-img {
+        width: 100px; /* Adjust profile image size */
+        height: 75px; /* Adjust profile image size */
+    }
+}
+
+/* Hamburger Button Styles */
+#hamburger-button {
+    position: fixed; /* Position it at the top right */
+    top: 20px; 
+    right: 20px; 
+    z-index: 9999; /* Ensure it’s on top */
+}
+
+/* Adjust Navbar for smaller screens */
+@media (max-width: 768px) {
+    .side-navbar {
+        display: none; /* Hide the sidebar by default */
+        position: fixed; /* Position it fixed for mobile */
+        top: 0;
+        left: 0;
+        height: 100vh; 
+        width: 250px; 
+        background-color: #343a40; /* Match sidebar background */
+        overflow-y: auto; /* Scroll if needed */
+        z-index: 1000; /* Ensure it's above other content */
+        transition: transform 0.3s ease; /* Add a transition effect */
+        transform: translateX(-100%); /* Start off-screen */
+    }
+
+    .side-navbar.active {
+        display: block; /* Show the sidebar when active */
+        transform: translateX(0); /* Slide in */
+    }
+
+    /* Adjust main content on small screens */
+    .main-content {
+        margin-left: 0; /* No margin for main content on small screens */
+        transition: margin-left 0.3s ease; /* Optional: Add a transition effect */
+    }
+}
+
+
+/** Student Dashboard Css **/
